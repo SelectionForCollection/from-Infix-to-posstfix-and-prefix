@@ -209,9 +209,9 @@ int main() {
 	stack<char> st;
 	int c;
 
-	cout << endl << "Меню:\n 1 - В префиксную форму\n 2 - В постфиксную форму\nВведите номер - ";
+	cout << endl << "Menu:\n 1 - To prefix\n 2 - To postfix\nEnter number - ";
 	cin >> c;
-	cout << endl << "Введите строку в инфиксной форме - ";
+	cout << endl << "Г‚ГўГҐГ¤ГЁГІГҐ Г±ГІГ°Г®ГЄГі Гў ГЁГ­ГґГЁГЄГ±Г­Г®Г© ГґГ®Г°Г¬ГҐ - ";
 	cin >> s;
 	if (check(s)) {
 		switch (c)
@@ -227,6 +227,6 @@ int main() {
 		}
 	}
 	else {
-		cout << "Проверьте скобки" << endl;
+		cout << "Please chek brackets" << endl;
 	}
 }
