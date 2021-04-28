@@ -211,7 +211,7 @@ int main() {
 
 	cout << endl << "Menu:\n 1 - To prefix\n 2 - To postfix\nEnter number - ";
 	cin >> c;
-	cout << endl << "Ââåäèòå ñòðîêó â èíôèêñíîé ôîðìå - ";
+	cout << endl << "Enter infix line - ";
 	cin >> s;
 	if (check(s)) {
 		switch (c)
