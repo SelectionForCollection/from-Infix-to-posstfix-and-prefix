@@ -72,15 +72,12 @@ string Pref(string s, stack<char> st) {
 				}
 				else {
 					if (priority(s[i]) == priority(st.top())) {
-						for (int o = 0; o <= st.size(); o++) {
-							if (st.top() == ')') {
-								st.pop();
-
-							}
-							else {
-								res = add_to_end(res, st.top());
-								st.pop();
-							}
+						if (st.top() == ')') {
+							st.pop();
+						}
+						else {
+							res = add_to_end(res, st.top());
+							st.pop();
 						}
 						st.emplace(s[i]);
 					}
